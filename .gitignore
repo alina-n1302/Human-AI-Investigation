@@ -1,0 +1,21 @@
+# Generated datasets - regenerate with make_dataset.py / case_generator.py
+data/*.csv
+
+# Generated evaluation output
+results/*.jsonl
+results/*.md
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Node / frontend build
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Editor/OS cruft
+.DS_Store
+.vscode/
+.idea/

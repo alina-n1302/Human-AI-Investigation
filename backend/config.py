@@ -1,0 +1,22 @@
+import os
+
+RANDOM_SEED = 42
+
+
+UNUSUAL_HOUR_START = 0
+UNUSUAL_HOUR_END = 5
+KNOWN_OFFICE_IPS = {"10.0.0.15", "10.0.0.44", "10.0.0.22"}
+RISKY_PROCESSES = {"powershell.exe"}
+
+
+MIN_SUPPORT_THRESHOLD = 2
+DECISION_MARGIN = 2
+
+
+CASES_PER_HYPOTHESIS_TYPE = 40
+
+
+FLASK_PORT = int(os.environ.get("PORT", 5000))
+
+
+CORS_ORIGINS = os.environ.get("CORS_ORIGINS", "*")
