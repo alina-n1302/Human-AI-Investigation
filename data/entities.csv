@@ -1,0 +1,23 @@
+entity_id,entity_type,name,notes
+alice,user,Alice Chen,"finance team, normal working hours"
+admin,user,Shared admin account,"high-privilege account, should rarely be used directly"
+bob,user,Bob Okafor,"IT administrator, on the approved maintenance roster"
+carol,user,Carol Nakamura,"marketing analyst, submitted resignation in March 2026"
+backup-svc,user,Shared backup service account,runs early-morning backup jobs
+laptop-01,device,Alice's laptop,assigned device
+laptop-05,device,Carol's laptop,assigned device
+server-01,device,Finance file server,holds sensitive HR/finance data
+server-02,device,Patch management server,regularly patched at night
+server-03,device,Backup server,runs scheduled backup jobs
+185.10.20.30,ip,Unrecognized foreign IP,not on the known office IP list
+10.0.0.15,ip,Office IP - Alice,matches Alice's usual office subnet
+10.0.0.44,ip,Office IP - Bob / backup-svc,matches the internal admin subnet
+10.0.0.22,ip,Office IP - Carol,matches the internal marketing subnet
+malicious-c2.example,domain,Known bad domain,appears on a public threat-intel blocklist
+updates.company-internal.com,domain,Internal update server,owned by the company
+personal-cloud-storage.example,domain,Personal cloud storage,not a company-owned service
+fazio_vendor_account,user,Fazio Mechanical Services account,real HVAC vendor whose credentials were stolen in the 2013 Target breach
+attacker,user,Unidentified attacker(s),used stolen credentials in the real Target (CASE005) and Uber (CASE006) breaches - different people in each case
+security_team,user,A company's security team,"generic role, reused across the real CASE005/CASE006 events - not one specific person"
+investigator,user,Placeholder for public reporting,"represents news/DOJ/court statements, not one specific person - reused across the real cases"
+employee,user,The employee in CASE007,"real person, referred to generically here rather than by name - see cases.csv for who and sources"

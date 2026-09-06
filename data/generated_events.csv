@@ -1,0 +1,721 @@
+event_id,case_id,timestamp,event_type,user,device,source_ip,destination,process,severity,source,label,description
+GEN0001-E1,GEN0001,2026-12-04 04:05:00,login_failed,admin,laptop-13,45.63.58.36,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0001-E2,GEN0001,2026-12-04 04:02:00,login_success,admin,laptop-13,45.63.58.36,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0001-E3,GEN0001,2026-12-04 04:01:00,process_start,admin,laptop-13,45.63.58.36,laptop-13,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0001-E4,GEN0001,2026-12-04 04:05:00,dns_query,admin,laptop-13,45.63.58.36,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0001-E5,GEN0001,2026-12-04 04:14:00,analyst_note,admin,laptop-13,45.63.58.36,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0002-E1,GEN0002,2026-09-14 01:28:00,login_failed,admin,laptop-81,91.184.167.180,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0002-E2,GEN0002,2026-09-14 01:51:00,login_success,admin,laptop-81,91.184.167.180,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0002-E3,GEN0002,2026-09-14 01:55:00,process_start,admin,laptop-81,91.184.167.180,laptop-81,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0002-E4,GEN0002,2026-09-14 01:00:00,dns_query,admin,laptop-81,91.184.167.180,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0002-E5,GEN0002,2026-09-14 01:44:00,analyst_note,admin,laptop-81,91.184.167.180,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0003-E1,GEN0003,2026-06-04 00:24:00,login_failed,admin,vm-53,45.40.56.246,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0003-E2,GEN0003,2026-06-04 00:22:00,login_success,admin,vm-53,45.40.56.246,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0003-E3,GEN0003,2026-06-04 00:54:00,process_start,admin,vm-53,45.40.56.246,vm-53,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0003-E4,GEN0003,2026-06-04 00:22:00,dns_query,admin,vm-53,45.40.56.246,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0003-E5,GEN0003,2026-06-04 00:51:00,analyst_note,admin,vm-53,45.40.56.246,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0004-E1,GEN0004,2026-02-18 02:53:00,login_failed,admin,laptop-68,185.250.237.97,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0004-E2,GEN0004,2026-02-18 02:36:00,login_success,admin,laptop-68,185.250.237.97,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0004-E3,GEN0004,2026-02-18 02:12:00,process_start,admin,laptop-68,185.250.237.97,laptop-68,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0004-E4,GEN0004,2026-02-18 02:45:00,dns_query,admin,laptop-68,185.250.237.97,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0004-E5,GEN0004,2026-02-18 02:02:00,analyst_note,admin,laptop-68,185.250.237.97,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0005-E1,GEN0005,2026-02-13 02:29:00,login_failed,admin,workstation-47,185.219.60.222,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0005-E2,GEN0005,2026-02-13 02:10:00,login_success,admin,workstation-47,185.219.60.222,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0005-E3,GEN0005,2026-02-13 02:23:00,process_start,admin,workstation-47,185.219.60.222,workstation-47,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0005-E4,GEN0005,2026-02-13 02:22:00,dns_query,admin,workstation-47,185.219.60.222,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0005-E5,GEN0005,2026-02-13 02:42:00,analyst_note,admin,workstation-47,185.219.60.222,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0006-E1,GEN0006,2026-09-24 01:10:00,login_failed,admin,server-97,185.156.163.44,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0006-E2,GEN0006,2026-09-24 01:24:00,login_success,admin,server-97,185.156.163.44,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0006-E3,GEN0006,2026-09-24 01:17:00,process_start,admin,server-97,185.156.163.44,server-97,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0006-E4,GEN0006,2026-09-24 01:40:00,dns_query,admin,server-97,185.156.163.44,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0006-E5,GEN0006,2026-09-24 01:43:00,analyst_note,admin,server-97,185.156.163.44,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0007-E1,GEN0007,2026-06-13 02:04:00,login_failed,admin,server-17,91.211.9.207,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0007-E2,GEN0007,2026-06-13 02:58:00,login_success,admin,server-17,91.211.9.207,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0007-E3,GEN0007,2026-06-13 02:36:00,process_start,admin,server-17,91.211.9.207,server-17,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0007-E4,GEN0007,2026-06-13 02:56:00,dns_query,admin,server-17,91.211.9.207,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0007-E5,GEN0007,2026-06-13 02:13:00,analyst_note,admin,server-17,91.211.9.207,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0008-E1,GEN0008,2026-04-24 04:34:00,login_failed,admin,vm-60,103.37.68.36,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0008-E2,GEN0008,2026-04-24 04:47:00,login_success,admin,vm-60,103.37.68.36,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0008-E3,GEN0008,2026-04-24 04:37:00,process_start,admin,vm-60,103.37.68.36,vm-60,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0008-E4,GEN0008,2026-04-24 04:27:00,dns_query,admin,vm-60,103.37.68.36,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0008-E5,GEN0008,2026-04-24 04:23:00,analyst_note,admin,vm-60,103.37.68.36,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0009-E1,GEN0009,2026-02-05 01:50:00,login_failed,admin,workstation-27,103.24.194.13,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0009-E2,GEN0009,2026-02-05 01:38:00,login_success,admin,workstation-27,103.24.194.13,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0009-E3,GEN0009,2026-02-05 01:04:00,process_start,admin,workstation-27,103.24.194.13,workstation-27,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0009-E4,GEN0009,2026-02-05 01:24:00,dns_query,admin,workstation-27,103.24.194.13,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0009-E5,GEN0009,2026-02-05 01:38:00,analyst_note,admin,workstation-27,103.24.194.13,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0010-E1,GEN0010,2026-01-22 00:43:00,login_failed,admin,vm-77,45.249.142.221,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0010-E2,GEN0010,2026-01-22 00:49:00,login_success,admin,vm-77,45.249.142.221,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0010-E3,GEN0010,2026-01-22 00:41:00,process_start,admin,vm-77,45.249.142.221,vm-77,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0010-E4,GEN0010,2026-01-22 00:21:00,dns_query,admin,vm-77,45.249.142.221,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0010-E5,GEN0010,2026-01-22 00:18:00,analyst_note,admin,vm-77,45.249.142.221,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0011-E1,GEN0011,2026-12-09 04:48:00,login_failed,admin,vm-30,103.1.245.185,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0011-E2,GEN0011,2026-12-09 04:32:00,login_success,admin,vm-30,103.1.245.185,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0011-E3,GEN0011,2026-12-09 04:58:00,process_start,admin,vm-30,103.1.245.185,vm-30,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0011-E4,GEN0011,2026-12-09 04:06:00,dns_query,admin,vm-30,103.1.245.185,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0011-E5,GEN0011,2026-12-09 04:53:00,analyst_note,admin,vm-30,103.1.245.185,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0012-E1,GEN0012,2026-09-01 04:20:00,login_failed,admin,workstation-29,45.196.42.139,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0012-E2,GEN0012,2026-09-01 04:01:00,login_success,admin,workstation-29,45.196.42.139,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0012-E3,GEN0012,2026-09-01 04:07:00,process_start,admin,workstation-29,45.196.42.139,workstation-29,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0012-E4,GEN0012,2026-09-01 04:23:00,dns_query,admin,workstation-29,45.196.42.139,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0012-E5,GEN0012,2026-09-01 04:15:00,analyst_note,admin,workstation-29,45.196.42.139,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0013-E1,GEN0013,2026-02-25 04:49:00,login_failed,admin,laptop-40,185.22.188.125,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0013-E2,GEN0013,2026-02-25 04:08:00,login_success,admin,laptop-40,185.22.188.125,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0013-E3,GEN0013,2026-02-25 04:42:00,process_start,admin,laptop-40,185.22.188.125,laptop-40,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0013-E4,GEN0013,2026-02-25 04:30:00,dns_query,admin,laptop-40,185.22.188.125,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0013-E5,GEN0013,2026-02-25 04:16:00,analyst_note,admin,laptop-40,185.22.188.125,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0014-E1,GEN0014,2026-11-21 02:28:00,login_failed,admin,vm-37,91.183.80.103,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0014-E2,GEN0014,2026-11-21 02:07:00,login_success,admin,vm-37,91.183.80.103,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0014-E3,GEN0014,2026-11-21 02:15:00,process_start,admin,vm-37,91.183.80.103,vm-37,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0014-E4,GEN0014,2026-11-21 02:14:00,dns_query,admin,vm-37,91.183.80.103,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0014-E5,GEN0014,2026-11-21 02:21:00,analyst_note,admin,vm-37,91.183.80.103,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0015-E1,GEN0015,2026-02-23 00:14:00,login_failed,admin,laptop-85,91.151.57.2,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0015-E2,GEN0015,2026-02-23 00:57:00,login_success,admin,laptop-85,91.151.57.2,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0015-E3,GEN0015,2026-02-23 00:02:00,process_start,admin,laptop-85,91.151.57.2,laptop-85,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0015-E4,GEN0015,2026-02-23 00:55:00,dns_query,admin,laptop-85,91.151.57.2,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0015-E5,GEN0015,2026-02-23 00:04:00,analyst_note,admin,laptop-85,91.151.57.2,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0016-E1,GEN0016,2026-12-19 04:30:00,login_failed,admin,workstation-45,103.55.139.34,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0016-E2,GEN0016,2026-12-19 04:50:00,login_success,admin,workstation-45,103.55.139.34,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0016-E3,GEN0016,2026-12-19 04:30:00,process_start,admin,workstation-45,103.55.139.34,workstation-45,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0016-E4,GEN0016,2026-12-19 04:51:00,dns_query,admin,workstation-45,103.55.139.34,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0016-E5,GEN0016,2026-12-19 04:12:00,analyst_note,admin,workstation-45,103.55.139.34,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0017-E1,GEN0017,2026-08-24 00:43:00,login_failed,admin,laptop-22,103.91.109.106,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0017-E2,GEN0017,2026-08-24 00:03:00,login_success,admin,laptop-22,103.91.109.106,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0017-E3,GEN0017,2026-08-24 00:25:00,process_start,admin,laptop-22,103.91.109.106,laptop-22,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0017-E4,GEN0017,2026-08-24 00:46:00,dns_query,admin,laptop-22,103.91.109.106,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0017-E5,GEN0017,2026-08-24 00:51:00,analyst_note,admin,laptop-22,103.91.109.106,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0018-E1,GEN0018,2026-03-14 01:17:00,login_failed,admin,laptop-41,91.49.138.115,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0018-E2,GEN0018,2026-03-14 01:15:00,login_success,admin,laptop-41,91.49.138.115,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0018-E3,GEN0018,2026-03-14 01:55:00,process_start,admin,laptop-41,91.49.138.115,laptop-41,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0018-E4,GEN0018,2026-03-14 01:04:00,dns_query,admin,laptop-41,91.49.138.115,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0018-E5,GEN0018,2026-03-14 01:51:00,analyst_note,admin,laptop-41,91.49.138.115,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0019-E1,GEN0019,2026-04-06 03:31:00,login_failed,admin,laptop-16,185.249.24.238,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0019-E2,GEN0019,2026-04-06 03:13:00,login_success,admin,laptop-16,185.249.24.238,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0019-E3,GEN0019,2026-04-06 03:55:00,process_start,admin,laptop-16,185.249.24.238,laptop-16,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0019-E4,GEN0019,2026-04-06 03:25:00,dns_query,admin,laptop-16,185.249.24.238,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0019-E5,GEN0019,2026-04-06 03:10:00,analyst_note,admin,laptop-16,185.249.24.238,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0020-E1,GEN0020,2026-08-10 03:44:00,login_failed,admin,vm-10,103.68.238.201,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0020-E2,GEN0020,2026-08-10 03:09:00,login_success,admin,vm-10,103.68.238.201,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0020-E3,GEN0020,2026-08-10 03:12:00,process_start,admin,vm-10,103.68.238.201,vm-10,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0020-E4,GEN0020,2026-08-10 03:18:00,dns_query,admin,vm-10,103.68.238.201,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0020-E5,GEN0020,2026-08-10 03:03:00,analyst_note,admin,vm-10,103.68.238.201,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0021-E1,GEN0021,2026-09-17 01:03:00,login_failed,admin,laptop-50,185.13.150.123,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0021-E2,GEN0021,2026-09-17 01:54:00,login_success,admin,laptop-50,185.13.150.123,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0021-E3,GEN0021,2026-09-17 01:11:00,process_start,admin,laptop-50,185.13.150.123,laptop-50,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0021-E4,GEN0021,2026-09-17 01:04:00,dns_query,admin,laptop-50,185.13.150.123,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0021-E5,GEN0021,2026-09-17 01:43:00,analyst_note,admin,laptop-50,185.13.150.123,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0022-E1,GEN0022,2026-04-19 04:02:00,login_failed,admin,workstation-61,185.242.228.146,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0022-E2,GEN0022,2026-04-19 04:26:00,login_success,admin,workstation-61,185.242.228.146,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0022-E3,GEN0022,2026-04-19 04:42:00,process_start,admin,workstation-61,185.242.228.146,workstation-61,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0022-E4,GEN0022,2026-04-19 04:37:00,dns_query,admin,workstation-61,185.242.228.146,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0022-E5,GEN0022,2026-04-19 04:16:00,analyst_note,admin,workstation-61,185.242.228.146,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0023-E1,GEN0023,2026-03-22 02:29:00,login_failed,admin,workstation-95,45.62.68.102,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0023-E2,GEN0023,2026-03-22 02:48:00,login_success,admin,workstation-95,45.62.68.102,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0023-E3,GEN0023,2026-03-22 02:04:00,process_start,admin,workstation-95,45.62.68.102,workstation-95,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0023-E4,GEN0023,2026-03-22 02:00:00,dns_query,admin,workstation-95,45.62.68.102,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0023-E5,GEN0023,2026-03-22 02:39:00,analyst_note,admin,workstation-95,45.62.68.102,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0024-E1,GEN0024,2026-06-03 01:23:00,login_failed,admin,laptop-19,91.130.68.34,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0024-E2,GEN0024,2026-06-03 01:10:00,login_success,admin,laptop-19,91.130.68.34,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0024-E3,GEN0024,2026-06-03 01:28:00,process_start,admin,laptop-19,91.130.68.34,laptop-19,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0024-E4,GEN0024,2026-06-03 01:53:00,dns_query,admin,laptop-19,91.130.68.34,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0024-E5,GEN0024,2026-06-03 01:39:00,analyst_note,admin,laptop-19,91.130.68.34,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0025-E1,GEN0025,2026-03-09 00:56:00,login_failed,admin,laptop-95,45.239.170.27,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0025-E2,GEN0025,2026-03-09 00:47:00,login_success,admin,laptop-95,45.239.170.27,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0025-E3,GEN0025,2026-03-09 00:35:00,process_start,admin,laptop-95,45.239.170.27,laptop-95,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0025-E4,GEN0025,2026-03-09 00:09:00,dns_query,admin,laptop-95,45.239.170.27,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0025-E5,GEN0025,2026-03-09 00:18:00,analyst_note,admin,laptop-95,45.239.170.27,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0026-E1,GEN0026,2026-05-17 03:16:00,login_failed,admin,workstation-53,91.176.163.219,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0026-E2,GEN0026,2026-05-17 03:05:00,login_success,admin,workstation-53,91.176.163.219,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0026-E3,GEN0026,2026-05-17 03:40:00,process_start,admin,workstation-53,91.176.163.219,workstation-53,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0026-E4,GEN0026,2026-05-17 03:27:00,dns_query,admin,workstation-53,91.176.163.219,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0026-E5,GEN0026,2026-05-17 03:02:00,analyst_note,admin,workstation-53,91.176.163.219,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0027-E1,GEN0027,2026-03-24 03:35:00,login_failed,admin,laptop-52,91.164.251.68,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0027-E2,GEN0027,2026-03-24 03:35:00,login_success,admin,laptop-52,91.164.251.68,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0027-E3,GEN0027,2026-03-24 03:00:00,process_start,admin,laptop-52,91.164.251.68,laptop-52,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0027-E4,GEN0027,2026-03-24 03:07:00,dns_query,admin,laptop-52,91.164.251.68,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0027-E5,GEN0027,2026-03-24 03:56:00,analyst_note,admin,laptop-52,91.164.251.68,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0028-E1,GEN0028,2026-09-05 03:08:00,login_failed,admin,workstation-79,185.214.95.150,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0028-E2,GEN0028,2026-09-05 03:19:00,login_success,admin,workstation-79,185.214.95.150,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0028-E3,GEN0028,2026-09-05 03:23:00,process_start,admin,workstation-79,185.214.95.150,workstation-79,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0028-E4,GEN0028,2026-09-05 03:57:00,dns_query,admin,workstation-79,185.214.95.150,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0028-E5,GEN0028,2026-09-05 03:57:00,analyst_note,admin,workstation-79,185.214.95.150,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0029-E1,GEN0029,2026-09-14 04:47:00,login_failed,admin,server-36,91.171.27.91,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0029-E2,GEN0029,2026-09-14 04:15:00,login_success,admin,server-36,91.171.27.91,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0029-E3,GEN0029,2026-09-14 04:55:00,process_start,admin,server-36,91.171.27.91,server-36,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0029-E4,GEN0029,2026-09-14 04:10:00,dns_query,admin,server-36,91.171.27.91,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0029-E5,GEN0029,2026-09-14 04:56:00,analyst_note,admin,server-36,91.171.27.91,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0030-E1,GEN0030,2026-07-26 01:17:00,login_failed,admin,vm-13,91.189.237.86,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0030-E2,GEN0030,2026-07-26 01:50:00,login_success,admin,vm-13,91.189.237.86,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0030-E3,GEN0030,2026-07-26 01:44:00,process_start,admin,vm-13,91.189.237.86,vm-13,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0030-E4,GEN0030,2026-07-26 01:06:00,dns_query,admin,vm-13,91.189.237.86,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0030-E5,GEN0030,2026-07-26 01:55:00,analyst_note,admin,vm-13,91.189.237.86,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0031-E1,GEN0031,2026-08-12 02:52:00,login_failed,admin,laptop-70,91.52.210.236,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0031-E2,GEN0031,2026-08-12 02:14:00,login_success,admin,laptop-70,91.52.210.236,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0031-E3,GEN0031,2026-08-12 02:01:00,process_start,admin,laptop-70,91.52.210.236,laptop-70,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0031-E4,GEN0031,2026-08-12 02:42:00,dns_query,admin,laptop-70,91.52.210.236,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0031-E5,GEN0031,2026-08-12 02:25:00,analyst_note,admin,laptop-70,91.52.210.236,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0032-E1,GEN0032,2026-06-21 04:25:00,login_failed,admin,server-45,185.248.198.72,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0032-E2,GEN0032,2026-06-21 04:01:00,login_success,admin,server-45,185.248.198.72,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0032-E3,GEN0032,2026-06-21 04:07:00,process_start,admin,server-45,185.248.198.72,server-45,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0032-E4,GEN0032,2026-06-21 04:56:00,dns_query,admin,server-45,185.248.198.72,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0032-E5,GEN0032,2026-06-21 04:11:00,analyst_note,admin,server-45,185.248.198.72,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0033-E1,GEN0033,2026-12-26 02:27:00,login_failed,admin,server-14,185.153.112.89,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0033-E2,GEN0033,2026-12-26 02:24:00,login_success,admin,server-14,185.153.112.89,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0033-E3,GEN0033,2026-12-26 02:57:00,process_start,admin,server-14,185.153.112.89,server-14,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0033-E4,GEN0033,2026-12-26 02:36:00,dns_query,admin,server-14,185.153.112.89,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0033-E5,GEN0033,2026-12-26 02:16:00,analyst_note,admin,server-14,185.153.112.89,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0034-E1,GEN0034,2026-09-22 01:23:00,login_failed,admin,laptop-65,185.134.237.207,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0034-E2,GEN0034,2026-09-22 01:04:00,login_success,admin,laptop-65,185.134.237.207,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0034-E3,GEN0034,2026-09-22 01:42:00,process_start,admin,laptop-65,185.134.237.207,laptop-65,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0034-E4,GEN0034,2026-09-22 01:58:00,dns_query,admin,laptop-65,185.134.237.207,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0034-E5,GEN0034,2026-09-22 01:39:00,analyst_note,admin,laptop-65,185.134.237.207,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0035-E1,GEN0035,2026-09-10 03:20:00,login_failed,admin,server-94,185.185.231.77,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0035-E2,GEN0035,2026-09-10 03:44:00,login_success,admin,server-94,185.185.231.77,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0035-E3,GEN0035,2026-09-10 03:18:00,process_start,admin,server-94,185.185.231.77,server-94,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0035-E4,GEN0035,2026-09-10 03:35:00,dns_query,admin,server-94,185.185.231.77,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0035-E5,GEN0035,2026-09-10 03:12:00,analyst_note,admin,server-94,185.185.231.77,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0036-E1,GEN0036,2026-03-20 04:19:00,login_failed,admin,vm-95,103.174.192.232,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0036-E2,GEN0036,2026-03-20 04:35:00,login_success,admin,vm-95,103.174.192.232,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0036-E3,GEN0036,2026-03-20 04:53:00,process_start,admin,vm-95,103.174.192.232,vm-95,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0036-E4,GEN0036,2026-03-20 04:00:00,dns_query,admin,vm-95,103.174.192.232,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0036-E5,GEN0036,2026-03-20 04:18:00,analyst_note,admin,vm-95,103.174.192.232,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0037-E1,GEN0037,2026-11-07 04:30:00,login_failed,admin,workstation-65,45.120.114.114,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0037-E2,GEN0037,2026-11-07 04:42:00,login_success,admin,workstation-65,45.120.114.114,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0037-E3,GEN0037,2026-11-07 04:05:00,process_start,admin,workstation-65,45.120.114.114,workstation-65,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0037-E4,GEN0037,2026-11-07 04:18:00,dns_query,admin,workstation-65,45.120.114.114,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0037-E5,GEN0037,2026-11-07 04:05:00,analyst_note,admin,workstation-65,45.120.114.114,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0038-E1,GEN0038,2026-03-01 00:15:00,login_failed,admin,workstation-96,45.58.207.51,vpn-gateway,vpn-client,medium,auth_log,suspicious,a foreign ip address makes several failed attempts against admin
+GEN0038-E2,GEN0038,2026-03-01 00:39:00,login_success,admin,workstation-96,45.58.207.51,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0038-E3,GEN0038,2026-03-01 00:54:00,process_start,admin,workstation-96,45.58.207.51,workstation-96,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0038-E4,GEN0038,2026-03-01 00:49:00,dns_query,admin,workstation-96,45.58.207.51,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0038-E5,GEN0038,2026-03-01 00:29:00,analyst_note,admin,workstation-96,45.58.207.51,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0039-E1,GEN0039,2026-08-13 01:09:00,login_failed,admin,vm-90,91.184.179.99,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0039-E2,GEN0039,2026-08-13 01:57:00,login_success,admin,vm-90,91.184.179.99,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0039-E3,GEN0039,2026-08-13 01:48:00,process_start,admin,vm-90,91.184.179.99,vm-90,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0039-E4,GEN0039,2026-08-13 01:55:00,dns_query,admin,vm-90,91.184.179.99,c2.example,powershell.exe,high,dns_log,suspicious,the process queries a domain known to be associated with malware
+GEN0039-E5,GEN0039,2026-08-13 01:49:00,analyst_note,admin,vm-90,91.184.179.99,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0040-E1,GEN0040,2026-09-15 00:35:00,login_failed,admin,vm-38,91.206.246.179,vpn-gateway,vpn-client,medium,auth_log,suspicious,failed login attempt for admin from a foreign ip address
+GEN0040-E2,GEN0040,2026-09-15 00:58:00,login_success,admin,vm-38,91.206.246.179,vpn-gateway,vpn-client,high,auth_log,suspicious,admin login succeeds moments later from the same foreign ip address
+GEN0040-E3,GEN0040,2026-09-15 00:54:00,process_start,admin,vm-38,91.206.246.179,vm-38,powershell.exe,high,endpoint_log,suspicious,a scripting process is launched right after the login
+GEN0040-E4,GEN0040,2026-09-15 00:07:00,dns_query,admin,vm-38,91.206.246.179,c2.example,powershell.exe,high,dns_log,suspicious,dns traffic is sent to a malicious c2 domain
+GEN0040-E5,GEN0040,2026-09-15 00:08:00,analyst_note,admin,vm-38,91.206.246.179,n/a,n/a,low,analyst_notes,context,no maintenance window was scheduled for this system
+GEN0041-E1,GEN0041,2026-09-15 01:47:00,login_success,hayden69,server-66,10.0.7.214,vpn-gateway,vpn-client,medium,auth_log,benign,hayden69 (IT admin) logs in from the internal corporate network
+GEN0041-E2,GEN0041,2026-09-15 01:55:00,process_start,hayden69,server-66,10.0.7.214,server-66,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0041-E3,GEN0041,2026-09-15 01:28:00,dns_query,hayden69,server-66,10.0.7.214,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0041-E4,GEN0041,2026-09-15 01:16:00,analyst_note,hayden69,server-66,10.0.7.214,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0042-E1,GEN0042,2026-04-09 23:04:00,login_success,rowan91,server-76,10.0.8.162,vpn-gateway,vpn-client,medium,auth_log,benign,rowan91 (IT admin) logs in from the internal corporate network
+GEN0042-E2,GEN0042,2026-04-09 23:45:00,process_start,rowan91,server-76,10.0.8.162,server-76,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0042-E3,GEN0042,2026-04-09 23:15:00,dns_query,rowan91,server-76,10.0.8.162,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0042-E4,GEN0042,2026-04-09 23:17:00,analyst_note,rowan91,server-76,10.0.8.162,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0043-E1,GEN0043,2026-07-23 01:45:00,login_success,casey79,laptop-27,10.0.3.61,vpn-gateway,vpn-client,medium,auth_log,benign,casey79 (IT admin) logs in from the internal corporate network
+GEN0043-E2,GEN0043,2026-07-23 01:13:00,process_start,casey79,laptop-27,10.0.3.61,laptop-27,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0043-E3,GEN0043,2026-07-23 01:26:00,dns_query,casey79,laptop-27,10.0.3.61,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0043-E4,GEN0043,2026-07-23 01:26:00,analyst_note,casey79,laptop-27,10.0.3.61,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0044-E1,GEN0044,2026-07-13 00:54:00,login_success,drew69,vm-17,10.0.4.215,vpn-gateway,vpn-client,medium,auth_log,benign,drew69 (IT admin) logs in from the internal corporate network
+GEN0044-E2,GEN0044,2026-07-13 00:56:00,process_start,drew69,vm-17,10.0.4.215,vm-17,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0044-E3,GEN0044,2026-07-13 00:30:00,dns_query,drew69,vm-17,10.0.4.215,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0044-E4,GEN0044,2026-07-13 00:00:00,analyst_note,drew69,vm-17,10.0.4.215,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0045-E1,GEN0045,2026-04-09 23:31:00,login_success,morgan59,vm-78,10.0.4.126,vpn-gateway,vpn-client,medium,auth_log,benign,morgan59 (IT admin) logs in from the internal corporate network
+GEN0045-E2,GEN0045,2026-04-09 23:01:00,process_start,morgan59,vm-78,10.0.4.126,vm-78,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0045-E3,GEN0045,2026-04-09 23:21:00,dns_query,morgan59,vm-78,10.0.4.126,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0045-E4,GEN0045,2026-04-09 23:42:00,analyst_note,morgan59,vm-78,10.0.4.126,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0046-E1,GEN0046,2026-07-19 00:05:00,login_success,skyler31,vm-26,10.0.1.234,vpn-gateway,vpn-client,medium,auth_log,benign,skyler31 (IT admin) logs in from the internal corporate network
+GEN0046-E2,GEN0046,2026-07-19 00:41:00,process_start,skyler31,vm-26,10.0.1.234,vm-26,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0046-E3,GEN0046,2026-07-19 00:08:00,dns_query,skyler31,vm-26,10.0.1.234,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0046-E4,GEN0046,2026-07-19 00:55:00,analyst_note,skyler31,vm-26,10.0.1.234,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0047-E1,GEN0047,2026-08-11 22:48:00,login_success,sam16,server-58,10.0.6.56,vpn-gateway,vpn-client,medium,auth_log,benign,sam16 (IT admin) logs in from the internal corporate network
+GEN0047-E2,GEN0047,2026-08-11 22:56:00,process_start,sam16,server-58,10.0.6.56,server-58,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0047-E3,GEN0047,2026-08-11 22:17:00,dns_query,sam16,server-58,10.0.6.56,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0047-E4,GEN0047,2026-08-11 22:48:00,analyst_note,sam16,server-58,10.0.6.56,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0048-E1,GEN0048,2026-06-08 00:49:00,login_success,morgan20,vm-12,10.0.1.245,vpn-gateway,vpn-client,medium,auth_log,benign,morgan20 (IT admin) logs in from the internal corporate network
+GEN0048-E2,GEN0048,2026-06-08 00:41:00,process_start,morgan20,vm-12,10.0.1.245,vm-12,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0048-E3,GEN0048,2026-06-08 00:48:00,dns_query,morgan20,vm-12,10.0.1.245,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0048-E4,GEN0048,2026-06-08 00:01:00,analyst_note,morgan20,vm-12,10.0.1.245,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0049-E1,GEN0049,2026-11-04 01:29:00,login_success,taylor12,workstation-40,10.0.3.123,vpn-gateway,vpn-client,medium,auth_log,benign,taylor12 (IT admin) logs in from the internal corporate network
+GEN0049-E2,GEN0049,2026-11-04 01:44:00,process_start,taylor12,workstation-40,10.0.3.123,workstation-40,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0049-E3,GEN0049,2026-11-04 01:49:00,dns_query,taylor12,workstation-40,10.0.3.123,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0049-E4,GEN0049,2026-11-04 01:23:00,analyst_note,taylor12,workstation-40,10.0.3.123,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0050-E1,GEN0050,2026-10-01 22:36:00,login_success,avery87,laptop-30,10.0.5.29,vpn-gateway,vpn-client,medium,auth_log,benign,avery87 (IT admin) logs in from the internal corporate network
+GEN0050-E2,GEN0050,2026-10-01 22:43:00,process_start,avery87,laptop-30,10.0.5.29,laptop-30,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0050-E3,GEN0050,2026-10-01 22:25:00,dns_query,avery87,laptop-30,10.0.5.29,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0050-E4,GEN0050,2026-10-01 22:45:00,analyst_note,avery87,laptop-30,10.0.5.29,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0051-E1,GEN0051,2026-11-20 00:50:00,login_success,jordan85,workstation-23,10.0.5.219,vpn-gateway,vpn-client,medium,auth_log,benign,jordan85 (IT admin) logs in from the internal corporate network
+GEN0051-E2,GEN0051,2026-11-20 00:36:00,process_start,jordan85,workstation-23,10.0.5.219,workstation-23,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0051-E3,GEN0051,2026-11-20 00:22:00,dns_query,jordan85,workstation-23,10.0.5.219,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0051-E4,GEN0051,2026-11-20 00:34:00,analyst_note,jordan85,workstation-23,10.0.5.219,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0052-E1,GEN0052,2026-07-27 23:06:00,login_success,reese57,laptop-74,10.0.6.5,vpn-gateway,vpn-client,medium,auth_log,benign,reese57 (IT admin) logs in from the internal corporate network
+GEN0052-E2,GEN0052,2026-07-27 23:27:00,process_start,reese57,laptop-74,10.0.6.5,laptop-74,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0052-E3,GEN0052,2026-07-27 23:40:00,dns_query,reese57,laptop-74,10.0.6.5,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0052-E4,GEN0052,2026-07-27 23:57:00,analyst_note,reese57,laptop-74,10.0.6.5,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0053-E1,GEN0053,2026-09-25 23:29:00,login_success,skyler29,vm-32,10.0.5.159,vpn-gateway,vpn-client,medium,auth_log,benign,skyler29 (IT admin) logs in from the internal corporate network
+GEN0053-E2,GEN0053,2026-09-25 23:27:00,process_start,skyler29,vm-32,10.0.5.159,vm-32,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0053-E3,GEN0053,2026-09-25 23:20:00,dns_query,skyler29,vm-32,10.0.5.159,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0053-E4,GEN0053,2026-09-25 23:54:00,analyst_note,skyler29,vm-32,10.0.5.159,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0054-E1,GEN0054,2026-08-19 23:21:00,login_success,rowan21,server-67,10.0.4.194,vpn-gateway,vpn-client,medium,auth_log,benign,rowan21 (IT admin) logs in from the internal corporate network
+GEN0054-E2,GEN0054,2026-08-19 23:01:00,process_start,rowan21,server-67,10.0.4.194,server-67,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0054-E3,GEN0054,2026-08-19 23:54:00,dns_query,rowan21,server-67,10.0.4.194,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0054-E4,GEN0054,2026-08-19 23:20:00,analyst_note,rowan21,server-67,10.0.4.194,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0055-E1,GEN0055,2026-10-23 22:35:00,login_success,quinn37,server-43,10.0.6.73,vpn-gateway,vpn-client,medium,auth_log,benign,quinn37 (IT admin) logs in from the internal corporate network
+GEN0055-E2,GEN0055,2026-10-23 22:00:00,process_start,quinn37,server-43,10.0.6.73,server-43,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0055-E3,GEN0055,2026-10-23 22:05:00,dns_query,quinn37,server-43,10.0.6.73,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0055-E4,GEN0055,2026-10-23 22:15:00,analyst_note,quinn37,server-43,10.0.6.73,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0056-E1,GEN0056,2026-12-16 23:50:00,login_success,quinn81,workstation-98,10.0.8.167,vpn-gateway,vpn-client,medium,auth_log,benign,quinn81 (IT admin) logs in from the internal corporate network
+GEN0056-E2,GEN0056,2026-12-16 23:01:00,process_start,quinn81,workstation-98,10.0.8.167,workstation-98,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0056-E3,GEN0056,2026-12-16 23:18:00,dns_query,quinn81,workstation-98,10.0.8.167,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0056-E4,GEN0056,2026-12-16 23:14:00,analyst_note,quinn81,workstation-98,10.0.8.167,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0057-E1,GEN0057,2026-09-17 22:27:00,login_success,skyler41,server-94,10.0.6.123,vpn-gateway,vpn-client,medium,auth_log,benign,skyler41 (IT admin) logs in from the internal corporate network
+GEN0057-E2,GEN0057,2026-09-17 22:47:00,process_start,skyler41,server-94,10.0.6.123,server-94,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0057-E3,GEN0057,2026-09-17 22:22:00,dns_query,skyler41,server-94,10.0.6.123,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0057-E4,GEN0057,2026-09-17 22:44:00,analyst_note,skyler41,server-94,10.0.6.123,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0058-E1,GEN0058,2026-04-11 00:47:00,login_success,morgan49,server-39,10.0.2.186,vpn-gateway,vpn-client,medium,auth_log,benign,morgan49 (IT admin) logs in from the internal corporate network
+GEN0058-E2,GEN0058,2026-04-11 00:34:00,process_start,morgan49,server-39,10.0.2.186,server-39,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0058-E3,GEN0058,2026-04-11 00:12:00,dns_query,morgan49,server-39,10.0.2.186,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0058-E4,GEN0058,2026-04-11 00:13:00,analyst_note,morgan49,server-39,10.0.2.186,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0059-E1,GEN0059,2026-04-12 01:19:00,login_success,morgan85,server-22,10.0.4.77,vpn-gateway,vpn-client,medium,auth_log,benign,morgan85 (IT admin) logs in from the internal corporate network
+GEN0059-E2,GEN0059,2026-04-12 01:00:00,process_start,morgan85,server-22,10.0.4.77,server-22,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0059-E3,GEN0059,2026-04-12 01:17:00,dns_query,morgan85,server-22,10.0.4.77,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0059-E4,GEN0059,2026-04-12 01:02:00,analyst_note,morgan85,server-22,10.0.4.77,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0060-E1,GEN0060,2026-01-19 22:30:00,login_success,drew47,workstation-91,10.0.8.28,vpn-gateway,vpn-client,medium,auth_log,benign,drew47 (IT admin) logs in from the internal corporate network
+GEN0060-E2,GEN0060,2026-01-19 22:30:00,process_start,drew47,workstation-91,10.0.8.28,workstation-91,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0060-E3,GEN0060,2026-01-19 22:21:00,dns_query,drew47,workstation-91,10.0.8.28,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0060-E4,GEN0060,2026-01-19 22:11:00,analyst_note,drew47,workstation-91,10.0.8.28,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0061-E1,GEN0061,2026-02-19 00:09:00,login_success,morgan71,laptop-18,10.0.7.127,vpn-gateway,vpn-client,medium,auth_log,benign,morgan71 (IT admin) logs in from the internal corporate network
+GEN0061-E2,GEN0061,2026-02-19 00:09:00,process_start,morgan71,laptop-18,10.0.7.127,laptop-18,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0061-E3,GEN0061,2026-02-19 00:05:00,dns_query,morgan71,laptop-18,10.0.7.127,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0061-E4,GEN0061,2026-02-19 00:15:00,analyst_note,morgan71,laptop-18,10.0.7.127,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0062-E1,GEN0062,2026-08-10 23:19:00,login_success,drew63,workstation-76,10.0.7.117,vpn-gateway,vpn-client,medium,auth_log,benign,drew63 (IT admin) logs in from the internal corporate network
+GEN0062-E2,GEN0062,2026-08-10 23:36:00,process_start,drew63,workstation-76,10.0.7.117,workstation-76,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0062-E3,GEN0062,2026-08-10 23:39:00,dns_query,drew63,workstation-76,10.0.7.117,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0062-E4,GEN0062,2026-08-10 23:47:00,analyst_note,drew63,workstation-76,10.0.7.117,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0063-E1,GEN0063,2026-04-06 00:10:00,login_success,hayden36,workstation-43,10.0.2.42,vpn-gateway,vpn-client,medium,auth_log,benign,hayden36 (IT admin) logs in from the internal corporate network
+GEN0063-E2,GEN0063,2026-04-06 00:00:00,process_start,hayden36,workstation-43,10.0.2.42,workstation-43,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0063-E3,GEN0063,2026-04-06 00:28:00,dns_query,hayden36,workstation-43,10.0.2.42,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0063-E4,GEN0063,2026-04-06 00:44:00,analyst_note,hayden36,workstation-43,10.0.2.42,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0064-E1,GEN0064,2026-08-03 01:16:00,login_success,morgan14,workstation-46,10.0.5.181,vpn-gateway,vpn-client,medium,auth_log,benign,morgan14 (IT admin) logs in from the internal corporate network
+GEN0064-E2,GEN0064,2026-08-03 01:50:00,process_start,morgan14,workstation-46,10.0.5.181,workstation-46,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0064-E3,GEN0064,2026-08-03 01:27:00,dns_query,morgan14,workstation-46,10.0.5.181,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0064-E4,GEN0064,2026-08-03 01:07:00,analyst_note,morgan14,workstation-46,10.0.5.181,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0065-E1,GEN0065,2026-03-26 22:38:00,login_success,reese29,server-28,10.0.2.17,vpn-gateway,vpn-client,medium,auth_log,benign,reese29 (IT admin) logs in from the internal corporate network
+GEN0065-E2,GEN0065,2026-03-26 22:47:00,process_start,reese29,server-28,10.0.2.17,server-28,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0065-E3,GEN0065,2026-03-26 22:28:00,dns_query,reese29,server-28,10.0.2.17,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0065-E4,GEN0065,2026-03-26 22:07:00,analyst_note,reese29,server-28,10.0.2.17,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0066-E1,GEN0066,2026-02-20 00:56:00,login_success,skyler48,vm-44,10.0.8.114,vpn-gateway,vpn-client,medium,auth_log,benign,skyler48 (IT admin) logs in from the internal corporate network
+GEN0066-E2,GEN0066,2026-02-20 00:27:00,process_start,skyler48,vm-44,10.0.8.114,vm-44,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0066-E3,GEN0066,2026-02-20 00:38:00,dns_query,skyler48,vm-44,10.0.8.114,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0066-E4,GEN0066,2026-02-20 00:16:00,analyst_note,skyler48,vm-44,10.0.8.114,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0067-E1,GEN0067,2026-01-25 01:30:00,login_success,jordan39,laptop-96,10.0.5.149,vpn-gateway,vpn-client,medium,auth_log,benign,jordan39 (IT admin) logs in from the internal corporate network
+GEN0067-E2,GEN0067,2026-01-25 01:33:00,process_start,jordan39,laptop-96,10.0.5.149,laptop-96,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0067-E3,GEN0067,2026-01-25 01:58:00,dns_query,jordan39,laptop-96,10.0.5.149,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0067-E4,GEN0067,2026-01-25 01:17:00,analyst_note,jordan39,laptop-96,10.0.5.149,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0068-E1,GEN0068,2026-07-11 22:42:00,login_success,avery65,vm-21,10.0.8.91,vpn-gateway,vpn-client,medium,auth_log,benign,avery65 (IT admin) logs in from the internal corporate network
+GEN0068-E2,GEN0068,2026-07-11 22:06:00,process_start,avery65,vm-21,10.0.8.91,vm-21,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0068-E3,GEN0068,2026-07-11 22:21:00,dns_query,avery65,vm-21,10.0.8.91,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0068-E4,GEN0068,2026-07-11 22:26:00,analyst_note,avery65,vm-21,10.0.8.91,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0069-E1,GEN0069,2026-02-11 22:20:00,login_success,morgan94,vm-80,10.0.1.118,vpn-gateway,vpn-client,medium,auth_log,benign,morgan94 (IT admin) logs in from the internal corporate network
+GEN0069-E2,GEN0069,2026-02-11 22:07:00,process_start,morgan94,vm-80,10.0.1.118,vm-80,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0069-E3,GEN0069,2026-02-11 22:55:00,dns_query,morgan94,vm-80,10.0.1.118,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0069-E4,GEN0069,2026-02-11 22:32:00,analyst_note,morgan94,vm-80,10.0.1.118,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0070-E1,GEN0070,2026-09-12 23:40:00,login_success,reese79,vm-62,10.0.1.50,vpn-gateway,vpn-client,medium,auth_log,benign,reese79 (IT admin) logs in from the internal corporate network
+GEN0070-E2,GEN0070,2026-09-12 23:28:00,process_start,reese79,vm-62,10.0.1.50,vm-62,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0070-E3,GEN0070,2026-09-12 23:13:00,dns_query,reese79,vm-62,10.0.1.50,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0070-E4,GEN0070,2026-09-12 23:17:00,analyst_note,reese79,vm-62,10.0.1.50,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0071-E1,GEN0071,2026-11-20 01:45:00,login_success,morgan66,vm-25,10.0.1.251,vpn-gateway,vpn-client,medium,auth_log,benign,morgan66 (IT admin) logs in from the internal corporate network
+GEN0071-E2,GEN0071,2026-11-20 01:10:00,process_start,morgan66,vm-25,10.0.1.251,vm-25,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0071-E3,GEN0071,2026-11-20 01:35:00,dns_query,morgan66,vm-25,10.0.1.251,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0071-E4,GEN0071,2026-11-20 01:00:00,analyst_note,morgan66,vm-25,10.0.1.251,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0072-E1,GEN0072,2026-03-16 22:32:00,login_success,jordan38,laptop-69,10.0.2.167,vpn-gateway,vpn-client,medium,auth_log,benign,jordan38 (IT admin) logs in from the internal corporate network
+GEN0072-E2,GEN0072,2026-03-16 22:45:00,process_start,jordan38,laptop-69,10.0.2.167,laptop-69,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0072-E3,GEN0072,2026-03-16 22:26:00,dns_query,jordan38,laptop-69,10.0.2.167,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0072-E4,GEN0072,2026-03-16 22:53:00,analyst_note,jordan38,laptop-69,10.0.2.167,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0073-E1,GEN0073,2026-04-20 01:55:00,login_success,quinn41,vm-80,10.0.3.100,vpn-gateway,vpn-client,medium,auth_log,benign,quinn41 (IT admin) logs in from the internal corporate network
+GEN0073-E2,GEN0073,2026-04-20 01:04:00,process_start,quinn41,vm-80,10.0.3.100,vm-80,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0073-E3,GEN0073,2026-04-20 01:49:00,dns_query,quinn41,vm-80,10.0.3.100,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0073-E4,GEN0073,2026-04-20 01:50:00,analyst_note,quinn41,vm-80,10.0.3.100,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0074-E1,GEN0074,2026-05-27 23:55:00,login_success,casey74,server-10,10.0.5.187,vpn-gateway,vpn-client,medium,auth_log,benign,casey74 (IT admin) logs in from the internal corporate network
+GEN0074-E2,GEN0074,2026-05-27 23:09:00,process_start,casey74,server-10,10.0.5.187,server-10,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0074-E3,GEN0074,2026-05-27 23:34:00,dns_query,casey74,server-10,10.0.5.187,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0074-E4,GEN0074,2026-05-27 23:30:00,analyst_note,casey74,server-10,10.0.5.187,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0075-E1,GEN0075,2026-04-23 01:36:00,login_success,casey80,vm-68,10.0.6.224,vpn-gateway,vpn-client,medium,auth_log,benign,casey80 (IT admin) logs in from the internal corporate network
+GEN0075-E2,GEN0075,2026-04-23 01:24:00,process_start,casey80,vm-68,10.0.6.224,vm-68,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0075-E3,GEN0075,2026-04-23 01:54:00,dns_query,casey80,vm-68,10.0.6.224,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0075-E4,GEN0075,2026-04-23 01:49:00,analyst_note,casey80,vm-68,10.0.6.224,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0076-E1,GEN0076,2026-11-05 23:02:00,login_success,alex50,vm-58,10.0.7.171,vpn-gateway,vpn-client,medium,auth_log,benign,alex50 (IT admin) logs in from the internal corporate network
+GEN0076-E2,GEN0076,2026-11-05 23:08:00,process_start,alex50,vm-58,10.0.7.171,vm-58,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0076-E3,GEN0076,2026-11-05 23:55:00,dns_query,alex50,vm-58,10.0.7.171,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0076-E4,GEN0076,2026-11-05 23:06:00,analyst_note,alex50,vm-58,10.0.7.171,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0077-E1,GEN0077,2026-11-05 00:30:00,login_success,jordan77,vm-11,10.0.3.106,vpn-gateway,vpn-client,medium,auth_log,benign,jordan77 (IT admin) logs in from the internal corporate network
+GEN0077-E2,GEN0077,2026-11-05 00:50:00,process_start,jordan77,vm-11,10.0.3.106,vm-11,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0077-E3,GEN0077,2026-11-05 00:21:00,dns_query,jordan77,vm-11,10.0.3.106,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0077-E4,GEN0077,2026-11-05 00:39:00,analyst_note,jordan77,vm-11,10.0.3.106,n/a,n/a,low,analyst_notes,context,an approved maintenance ticket covers this activity
+GEN0078-E1,GEN0078,2026-06-21 23:55:00,login_success,reese20,server-96,10.0.7.246,vpn-gateway,vpn-client,medium,auth_log,benign,reese20 (IT admin) logs in from the internal corporate network
+GEN0078-E2,GEN0078,2026-06-21 23:34:00,process_start,reese20,server-96,10.0.7.246,server-96,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0078-E3,GEN0078,2026-06-21 23:39:00,dns_query,reese20,server-96,10.0.7.246,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0078-E4,GEN0078,2026-06-21 23:04:00,analyst_note,reese20,server-96,10.0.7.246,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0079-E1,GEN0079,2026-02-25 00:28:00,login_success,reese97,server-39,10.0.2.113,vpn-gateway,vpn-client,medium,auth_log,benign,reese97 (IT admin) logs in from the internal corporate network
+GEN0079-E2,GEN0079,2026-02-25 00:10:00,process_start,reese97,server-39,10.0.2.113,server-39,powershell.exe,medium,endpoint_log,benign,a scheduled patch process begins via powershell
+GEN0079-E3,GEN0079,2026-02-25 00:57:00,dns_query,reese97,server-39,10.0.2.113,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0079-E4,GEN0079,2026-02-25 00:01:00,analyst_note,reese97,server-39,10.0.2.113,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0080-E1,GEN0080,2026-03-08 23:36:00,login_success,casey17,server-55,10.0.6.112,vpn-gateway,vpn-client,medium,auth_log,benign,casey17 (IT admin) logs in from the internal corporate network
+GEN0080-E2,GEN0080,2026-03-08 23:43:00,process_start,casey17,server-55,10.0.6.112,server-55,powershell.exe,medium,endpoint_log,benign,powershell starts to run a scheduled patch process
+GEN0080-E3,GEN0080,2026-03-08 23:10:00,dns_query,casey17,server-55,10.0.6.112,updates.company-internal.com,wusa.exe,low,dns_log,benign,the process contacts the company's own internal update server
+GEN0080-E4,GEN0080,2026-03-08 23:11:00,analyst_note,casey17,server-55,10.0.6.112,n/a,n/a,low,analyst_notes,context,a maintenance ticket authorizes this exact time window
+GEN0081-E1,GEN0081,2026-08-21 13:29:00,login_success,avery58,workstation-73,10.0.3.61,internal-vpn,vpn-client,low,auth_log,benign,avery58 logs in normally during work hours
+GEN0081-E2,GEN0081,2026-08-21 13:16:00,file_access,avery58,workstation-73,10.0.3.61,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0081-E3,GEN0081,2026-08-21 13:57:00,network_upload,avery58,workstation-73,10.0.3.61,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0081-E4,GEN0081,2026-08-21 13:51:00,analyst_note,avery58,workstation-73,10.0.3.61,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0081-E5,GEN0081,2026-08-21 13:29:00,analyst_note,avery58,workstation-73,10.0.3.61,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0082-E1,GEN0082,2026-06-19 13:40:00,login_success,morgan96,workstation-19,10.0.8.243,internal-vpn,vpn-client,low,auth_log,benign,morgan96 logs in normally during work hours
+GEN0082-E2,GEN0082,2026-06-19 13:27:00,file_access,morgan96,workstation-19,10.0.8.243,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0082-E3,GEN0082,2026-06-19 13:29:00,network_upload,morgan96,workstation-19,10.0.8.243,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0082-E4,GEN0082,2026-06-19 13:54:00,analyst_note,morgan96,workstation-19,10.0.8.243,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0082-E5,GEN0082,2026-06-19 13:19:00,analyst_note,morgan96,workstation-19,10.0.8.243,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0083-E1,GEN0083,2026-10-12 18:18:00,login_success,taylor59,vm-23,10.0.4.99,internal-vpn,vpn-client,low,auth_log,benign,taylor59 logs in normally during work hours
+GEN0083-E2,GEN0083,2026-10-12 18:44:00,file_access,taylor59,vm-23,10.0.4.99,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0083-E3,GEN0083,2026-10-12 18:01:00,network_upload,taylor59,vm-23,10.0.4.99,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0083-E4,GEN0083,2026-10-12 18:53:00,analyst_note,taylor59,vm-23,10.0.4.99,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0083-E5,GEN0083,2026-10-12 18:42:00,analyst_note,taylor59,vm-23,10.0.4.99,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0084-E1,GEN0084,2026-10-24 16:53:00,login_success,riley45,laptop-82,10.0.1.235,internal-vpn,vpn-client,low,auth_log,benign,riley45 logs in normally during work hours
+GEN0084-E2,GEN0084,2026-10-24 16:57:00,file_access,riley45,laptop-82,10.0.1.235,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0084-E3,GEN0084,2026-10-24 16:49:00,network_upload,riley45,laptop-82,10.0.1.235,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0084-E4,GEN0084,2026-10-24 16:51:00,analyst_note,riley45,laptop-82,10.0.1.235,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0084-E5,GEN0084,2026-10-24 16:14:00,analyst_note,riley45,laptop-82,10.0.1.235,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0085-E1,GEN0085,2026-05-22 11:40:00,login_success,avery55,workstation-91,10.0.4.160,internal-vpn,vpn-client,low,auth_log,benign,avery55 logs in normally during work hours
+GEN0085-E2,GEN0085,2026-05-22 11:06:00,file_access,avery55,workstation-91,10.0.4.160,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0085-E3,GEN0085,2026-05-22 11:19:00,network_upload,avery55,workstation-91,10.0.4.160,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0085-E4,GEN0085,2026-05-22 11:50:00,analyst_note,avery55,workstation-91,10.0.4.160,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0085-E5,GEN0085,2026-05-22 11:28:00,analyst_note,avery55,workstation-91,10.0.4.160,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0086-E1,GEN0086,2026-05-11 15:11:00,login_success,alex84,server-26,10.0.2.234,internal-vpn,vpn-client,low,auth_log,benign,alex84 logs in normally during work hours
+GEN0086-E2,GEN0086,2026-05-11 15:12:00,file_access,alex84,server-26,10.0.2.234,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0086-E3,GEN0086,2026-05-11 15:50:00,network_upload,alex84,server-26,10.0.2.234,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0086-E4,GEN0086,2026-05-11 15:34:00,analyst_note,alex84,server-26,10.0.2.234,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0086-E5,GEN0086,2026-05-11 15:56:00,analyst_note,alex84,server-26,10.0.2.234,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0087-E1,GEN0087,2026-08-26 13:47:00,login_success,casey77,server-31,10.0.5.235,internal-vpn,vpn-client,low,auth_log,benign,casey77 logs in normally during work hours
+GEN0087-E2,GEN0087,2026-08-26 13:55:00,file_access,casey77,server-31,10.0.5.235,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0087-E3,GEN0087,2026-08-26 13:51:00,network_upload,casey77,server-31,10.0.5.235,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0087-E4,GEN0087,2026-08-26 13:07:00,analyst_note,casey77,server-31,10.0.5.235,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0087-E5,GEN0087,2026-08-26 13:29:00,analyst_note,casey77,server-31,10.0.5.235,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0088-E1,GEN0088,2026-09-12 10:50:00,login_success,jordan28,workstation-96,10.0.7.249,internal-vpn,vpn-client,low,auth_log,benign,jordan28 logs in normally during work hours
+GEN0088-E2,GEN0088,2026-09-12 10:25:00,file_access,jordan28,workstation-96,10.0.7.249,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0088-E3,GEN0088,2026-09-12 10:16:00,network_upload,jordan28,workstation-96,10.0.7.249,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0088-E4,GEN0088,2026-09-12 10:34:00,analyst_note,jordan28,workstation-96,10.0.7.249,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0088-E5,GEN0088,2026-09-12 10:07:00,analyst_note,jordan28,workstation-96,10.0.7.249,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0089-E1,GEN0089,2026-11-12 10:43:00,login_success,quinn57,server-84,10.0.7.212,internal-vpn,vpn-client,low,auth_log,benign,quinn57 logs in normally during work hours
+GEN0089-E2,GEN0089,2026-11-12 10:14:00,file_access,quinn57,server-84,10.0.7.212,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0089-E3,GEN0089,2026-11-12 10:01:00,network_upload,quinn57,server-84,10.0.7.212,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0089-E4,GEN0089,2026-11-12 10:39:00,analyst_note,quinn57,server-84,10.0.7.212,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0089-E5,GEN0089,2026-11-12 10:56:00,analyst_note,quinn57,server-84,10.0.7.212,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0090-E1,GEN0090,2026-08-23 13:41:00,login_success,drew51,workstation-92,10.0.2.164,internal-vpn,vpn-client,low,auth_log,benign,drew51 logs in normally during work hours
+GEN0090-E2,GEN0090,2026-08-23 13:26:00,file_access,drew51,workstation-92,10.0.2.164,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0090-E3,GEN0090,2026-08-23 13:08:00,network_upload,drew51,workstation-92,10.0.2.164,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0090-E4,GEN0090,2026-08-23 13:02:00,analyst_note,drew51,workstation-92,10.0.2.164,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0090-E5,GEN0090,2026-08-23 13:02:00,analyst_note,drew51,workstation-92,10.0.2.164,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0091-E1,GEN0091,2026-09-05 15:29:00,login_success,morgan73,laptop-22,10.0.4.229,internal-vpn,vpn-client,low,auth_log,benign,morgan73 logs in normally during work hours
+GEN0091-E2,GEN0091,2026-09-05 15:23:00,file_access,morgan73,laptop-22,10.0.4.229,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0091-E3,GEN0091,2026-09-05 15:37:00,network_upload,morgan73,laptop-22,10.0.4.229,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0091-E4,GEN0091,2026-09-05 15:47:00,analyst_note,morgan73,laptop-22,10.0.4.229,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0091-E5,GEN0091,2026-09-05 15:46:00,analyst_note,morgan73,laptop-22,10.0.4.229,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0092-E1,GEN0092,2026-05-02 14:13:00,login_success,sam63,laptop-72,10.0.7.242,internal-vpn,vpn-client,low,auth_log,benign,sam63 logs in normally during work hours
+GEN0092-E2,GEN0092,2026-05-02 14:28:00,file_access,sam63,laptop-72,10.0.7.242,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0092-E3,GEN0092,2026-05-02 14:15:00,network_upload,sam63,laptop-72,10.0.7.242,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0092-E4,GEN0092,2026-05-02 14:54:00,analyst_note,sam63,laptop-72,10.0.7.242,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0092-E5,GEN0092,2026-05-02 14:23:00,analyst_note,sam63,laptop-72,10.0.7.242,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0093-E1,GEN0093,2026-07-09 12:07:00,login_success,jordan97,server-79,10.0.6.17,internal-vpn,vpn-client,low,auth_log,benign,jordan97 logs in normally during work hours
+GEN0093-E2,GEN0093,2026-07-09 12:54:00,file_access,jordan97,server-79,10.0.6.17,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0093-E3,GEN0093,2026-07-09 12:05:00,network_upload,jordan97,server-79,10.0.6.17,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0093-E4,GEN0093,2026-07-09 12:42:00,analyst_note,jordan97,server-79,10.0.6.17,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0093-E5,GEN0093,2026-07-09 12:13:00,analyst_note,jordan97,server-79,10.0.6.17,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0094-E1,GEN0094,2026-03-26 18:13:00,login_success,reese91,laptop-16,10.0.6.64,internal-vpn,vpn-client,low,auth_log,benign,reese91 logs in normally during work hours
+GEN0094-E2,GEN0094,2026-03-26 18:04:00,file_access,reese91,laptop-16,10.0.6.64,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0094-E3,GEN0094,2026-03-26 18:37:00,network_upload,reese91,laptop-16,10.0.6.64,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0094-E4,GEN0094,2026-03-26 18:13:00,analyst_note,reese91,laptop-16,10.0.6.64,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0094-E5,GEN0094,2026-03-26 18:52:00,analyst_note,reese91,laptop-16,10.0.6.64,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0095-E1,GEN0095,2026-03-05 17:16:00,login_success,rowan39,server-28,10.0.1.72,internal-vpn,vpn-client,low,auth_log,benign,rowan39 logs in normally during work hours
+GEN0095-E2,GEN0095,2026-03-05 17:51:00,file_access,rowan39,server-28,10.0.1.72,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0095-E3,GEN0095,2026-03-05 17:07:00,network_upload,rowan39,server-28,10.0.1.72,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0095-E4,GEN0095,2026-03-05 17:42:00,analyst_note,rowan39,server-28,10.0.1.72,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0095-E5,GEN0095,2026-03-05 17:55:00,analyst_note,rowan39,server-28,10.0.1.72,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0096-E1,GEN0096,2026-06-01 11:16:00,login_success,alex26,laptop-55,10.0.4.152,internal-vpn,vpn-client,low,auth_log,benign,alex26 logs in normally during work hours
+GEN0096-E2,GEN0096,2026-06-01 11:03:00,file_access,alex26,laptop-55,10.0.4.152,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0096-E3,GEN0096,2026-06-01 11:47:00,network_upload,alex26,laptop-55,10.0.4.152,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0096-E4,GEN0096,2026-06-01 11:26:00,analyst_note,alex26,laptop-55,10.0.4.152,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0096-E5,GEN0096,2026-06-01 11:33:00,analyst_note,alex26,laptop-55,10.0.4.152,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0097-E1,GEN0097,2026-10-04 16:32:00,login_success,jordan18,vm-67,10.0.6.133,internal-vpn,vpn-client,low,auth_log,benign,jordan18 logs in normally during work hours
+GEN0097-E2,GEN0097,2026-10-04 16:14:00,file_access,jordan18,vm-67,10.0.6.133,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0097-E3,GEN0097,2026-10-04 16:46:00,network_upload,jordan18,vm-67,10.0.6.133,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0097-E4,GEN0097,2026-10-04 16:50:00,analyst_note,jordan18,vm-67,10.0.6.133,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0097-E5,GEN0097,2026-10-04 16:58:00,analyst_note,jordan18,vm-67,10.0.6.133,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0098-E1,GEN0098,2026-08-13 15:43:00,login_success,rowan94,server-68,10.0.1.17,internal-vpn,vpn-client,low,auth_log,benign,rowan94 logs in normally during work hours
+GEN0098-E2,GEN0098,2026-08-13 15:06:00,file_access,rowan94,server-68,10.0.1.17,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0098-E3,GEN0098,2026-08-13 15:45:00,network_upload,rowan94,server-68,10.0.1.17,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0098-E4,GEN0098,2026-08-13 15:58:00,analyst_note,rowan94,server-68,10.0.1.17,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0098-E5,GEN0098,2026-08-13 15:28:00,analyst_note,rowan94,server-68,10.0.1.17,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0099-E1,GEN0099,2026-03-09 18:40:00,login_success,jordan20,server-87,10.0.3.18,internal-vpn,vpn-client,low,auth_log,benign,jordan20 logs in normally during work hours
+GEN0099-E2,GEN0099,2026-03-09 18:37:00,file_access,jordan20,server-87,10.0.3.18,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0099-E3,GEN0099,2026-03-09 18:24:00,network_upload,jordan20,server-87,10.0.3.18,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0099-E4,GEN0099,2026-03-09 18:38:00,analyst_note,jordan20,server-87,10.0.3.18,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0099-E5,GEN0099,2026-03-09 18:33:00,analyst_note,jordan20,server-87,10.0.3.18,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0100-E1,GEN0100,2026-11-21 17:46:00,login_success,morgan68,vm-22,10.0.2.220,internal-vpn,vpn-client,low,auth_log,benign,morgan68 logs in normally during work hours
+GEN0100-E2,GEN0100,2026-11-21 17:55:00,file_access,morgan68,vm-22,10.0.2.220,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0100-E3,GEN0100,2026-11-21 17:27:00,network_upload,morgan68,vm-22,10.0.2.220,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0100-E4,GEN0100,2026-11-21 17:28:00,analyst_note,morgan68,vm-22,10.0.2.220,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0100-E5,GEN0100,2026-11-21 17:56:00,analyst_note,morgan68,vm-22,10.0.2.220,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0101-E1,GEN0101,2026-12-04 14:27:00,login_success,taylor62,server-68,10.0.7.108,internal-vpn,vpn-client,low,auth_log,benign,taylor62 logs in normally during work hours
+GEN0101-E2,GEN0101,2026-12-04 14:20:00,file_access,taylor62,server-68,10.0.7.108,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0101-E3,GEN0101,2026-12-04 14:23:00,network_upload,taylor62,server-68,10.0.7.108,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0101-E4,GEN0101,2026-12-04 14:09:00,analyst_note,taylor62,server-68,10.0.7.108,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0101-E5,GEN0101,2026-12-04 14:43:00,analyst_note,taylor62,server-68,10.0.7.108,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0102-E1,GEN0102,2026-02-24 14:51:00,login_success,quinn18,laptop-20,10.0.2.112,internal-vpn,vpn-client,low,auth_log,benign,quinn18 logs in normally during work hours
+GEN0102-E2,GEN0102,2026-02-24 14:08:00,file_access,quinn18,laptop-20,10.0.2.112,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0102-E3,GEN0102,2026-02-24 14:37:00,network_upload,quinn18,laptop-20,10.0.2.112,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0102-E4,GEN0102,2026-02-24 14:35:00,analyst_note,quinn18,laptop-20,10.0.2.112,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0102-E5,GEN0102,2026-02-24 14:35:00,analyst_note,quinn18,laptop-20,10.0.2.112,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0103-E1,GEN0103,2026-11-25 15:55:00,login_success,casey95,laptop-62,10.0.6.225,internal-vpn,vpn-client,low,auth_log,benign,casey95 logs in normally during work hours
+GEN0103-E2,GEN0103,2026-11-25 15:58:00,file_access,casey95,laptop-62,10.0.6.225,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0103-E3,GEN0103,2026-11-25 15:18:00,network_upload,casey95,laptop-62,10.0.6.225,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0103-E4,GEN0103,2026-11-25 15:38:00,analyst_note,casey95,laptop-62,10.0.6.225,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0103-E5,GEN0103,2026-11-25 15:19:00,analyst_note,casey95,laptop-62,10.0.6.225,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0104-E1,GEN0104,2026-02-12 17:23:00,login_success,casey23,workstation-29,10.0.8.59,internal-vpn,vpn-client,low,auth_log,benign,casey23 logs in normally during work hours
+GEN0104-E2,GEN0104,2026-02-12 17:07:00,file_access,casey23,workstation-29,10.0.8.59,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0104-E3,GEN0104,2026-02-12 17:36:00,network_upload,casey23,workstation-29,10.0.8.59,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0104-E4,GEN0104,2026-02-12 17:14:00,analyst_note,casey23,workstation-29,10.0.8.59,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0104-E5,GEN0104,2026-02-12 17:51:00,analyst_note,casey23,workstation-29,10.0.8.59,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0105-E1,GEN0105,2026-03-09 13:58:00,login_success,riley81,laptop-87,10.0.5.9,internal-vpn,vpn-client,low,auth_log,benign,riley81 logs in normally during work hours
+GEN0105-E2,GEN0105,2026-03-09 13:21:00,file_access,riley81,laptop-87,10.0.5.9,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0105-E3,GEN0105,2026-03-09 13:00:00,network_upload,riley81,laptop-87,10.0.5.9,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0105-E4,GEN0105,2026-03-09 13:11:00,analyst_note,riley81,laptop-87,10.0.5.9,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0105-E5,GEN0105,2026-03-09 13:55:00,analyst_note,riley81,laptop-87,10.0.5.9,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0106-E1,GEN0106,2026-11-01 10:47:00,login_success,sam82,vm-18,10.0.3.191,internal-vpn,vpn-client,low,auth_log,benign,sam82 logs in normally during work hours
+GEN0106-E2,GEN0106,2026-11-01 10:33:00,file_access,sam82,vm-18,10.0.3.191,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0106-E3,GEN0106,2026-11-01 10:24:00,network_upload,sam82,vm-18,10.0.3.191,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0106-E4,GEN0106,2026-11-01 10:26:00,analyst_note,sam82,vm-18,10.0.3.191,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0106-E5,GEN0106,2026-11-01 10:29:00,analyst_note,sam82,vm-18,10.0.3.191,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0107-E1,GEN0107,2026-10-20 10:56:00,login_success,casey30,server-49,10.0.6.200,internal-vpn,vpn-client,low,auth_log,benign,casey30 logs in normally during work hours
+GEN0107-E2,GEN0107,2026-10-20 10:03:00,file_access,casey30,server-49,10.0.6.200,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0107-E3,GEN0107,2026-10-20 10:10:00,network_upload,casey30,server-49,10.0.6.200,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0107-E4,GEN0107,2026-10-20 10:48:00,analyst_note,casey30,server-49,10.0.6.200,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0107-E5,GEN0107,2026-10-20 10:39:00,analyst_note,casey30,server-49,10.0.6.200,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0108-E1,GEN0108,2026-07-16 18:28:00,login_success,alex96,laptop-44,10.0.8.171,internal-vpn,vpn-client,low,auth_log,benign,alex96 logs in normally during work hours
+GEN0108-E2,GEN0108,2026-07-16 18:26:00,file_access,alex96,laptop-44,10.0.8.171,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0108-E3,GEN0108,2026-07-16 18:13:00,network_upload,alex96,laptop-44,10.0.8.171,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0108-E4,GEN0108,2026-07-16 18:48:00,analyst_note,alex96,laptop-44,10.0.8.171,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0108-E5,GEN0108,2026-07-16 18:32:00,analyst_note,alex96,laptop-44,10.0.8.171,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0109-E1,GEN0109,2026-11-19 16:33:00,login_success,jordan54,vm-24,10.0.5.175,internal-vpn,vpn-client,low,auth_log,benign,jordan54 logs in normally during work hours
+GEN0109-E2,GEN0109,2026-11-19 16:42:00,file_access,jordan54,vm-24,10.0.5.175,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0109-E3,GEN0109,2026-11-19 16:02:00,network_upload,jordan54,vm-24,10.0.5.175,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0109-E4,GEN0109,2026-11-19 16:14:00,analyst_note,jordan54,vm-24,10.0.5.175,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0109-E5,GEN0109,2026-11-19 16:25:00,analyst_note,jordan54,vm-24,10.0.5.175,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0110-E1,GEN0110,2026-04-25 11:48:00,login_success,avery17,laptop-36,10.0.5.244,internal-vpn,vpn-client,low,auth_log,benign,avery17 logs in normally during work hours
+GEN0110-E2,GEN0110,2026-04-25 11:16:00,file_access,avery17,laptop-36,10.0.5.244,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0110-E3,GEN0110,2026-04-25 11:20:00,network_upload,avery17,laptop-36,10.0.5.244,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0110-E4,GEN0110,2026-04-25 11:07:00,analyst_note,avery17,laptop-36,10.0.5.244,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0110-E5,GEN0110,2026-04-25 11:00:00,analyst_note,avery17,laptop-36,10.0.5.244,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0111-E1,GEN0111,2026-12-08 17:35:00,login_success,quinn65,workstation-26,10.0.7.138,internal-vpn,vpn-client,low,auth_log,benign,quinn65 logs in normally during work hours
+GEN0111-E2,GEN0111,2026-12-08 17:53:00,file_access,quinn65,workstation-26,10.0.7.138,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0111-E3,GEN0111,2026-12-08 17:04:00,network_upload,quinn65,workstation-26,10.0.7.138,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0111-E4,GEN0111,2026-12-08 17:25:00,analyst_note,quinn65,workstation-26,10.0.7.138,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0111-E5,GEN0111,2026-12-08 17:55:00,analyst_note,quinn65,workstation-26,10.0.7.138,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0112-E1,GEN0112,2026-02-11 18:27:00,login_success,skyler15,vm-12,10.0.8.237,internal-vpn,vpn-client,low,auth_log,benign,skyler15 logs in normally during work hours
+GEN0112-E2,GEN0112,2026-02-11 18:36:00,file_access,skyler15,vm-12,10.0.8.237,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0112-E3,GEN0112,2026-02-11 18:45:00,network_upload,skyler15,vm-12,10.0.8.237,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0112-E4,GEN0112,2026-02-11 18:40:00,analyst_note,skyler15,vm-12,10.0.8.237,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0112-E5,GEN0112,2026-02-11 18:26:00,analyst_note,skyler15,vm-12,10.0.8.237,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0113-E1,GEN0113,2026-10-15 14:05:00,login_success,morgan24,vm-12,10.0.6.45,internal-vpn,vpn-client,low,auth_log,benign,morgan24 logs in normally during work hours
+GEN0113-E2,GEN0113,2026-10-15 14:27:00,file_access,morgan24,vm-12,10.0.6.45,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0113-E3,GEN0113,2026-10-15 14:15:00,network_upload,morgan24,vm-12,10.0.6.45,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0113-E4,GEN0113,2026-10-15 14:27:00,analyst_note,morgan24,vm-12,10.0.6.45,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0113-E5,GEN0113,2026-10-15 14:37:00,analyst_note,morgan24,vm-12,10.0.6.45,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0114-E1,GEN0114,2026-06-08 14:49:00,login_success,riley77,laptop-60,10.0.5.192,internal-vpn,vpn-client,low,auth_log,benign,riley77 logs in normally during work hours
+GEN0114-E2,GEN0114,2026-06-08 14:10:00,file_access,riley77,laptop-60,10.0.5.192,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0114-E3,GEN0114,2026-06-08 14:32:00,network_upload,riley77,laptop-60,10.0.5.192,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0114-E4,GEN0114,2026-06-08 14:40:00,analyst_note,riley77,laptop-60,10.0.5.192,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0114-E5,GEN0114,2026-06-08 14:07:00,analyst_note,riley77,laptop-60,10.0.5.192,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0115-E1,GEN0115,2026-11-27 11:15:00,login_success,drew75,workstation-54,10.0.6.188,internal-vpn,vpn-client,low,auth_log,benign,drew75 logs in normally during work hours
+GEN0115-E2,GEN0115,2026-11-27 11:06:00,file_access,drew75,workstation-54,10.0.6.188,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0115-E3,GEN0115,2026-11-27 11:16:00,network_upload,drew75,workstation-54,10.0.6.188,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0115-E4,GEN0115,2026-11-27 11:12:00,analyst_note,drew75,workstation-54,10.0.6.188,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0115-E5,GEN0115,2026-11-27 11:11:00,analyst_note,drew75,workstation-54,10.0.6.188,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0116-E1,GEN0116,2026-10-25 18:28:00,login_success,avery29,laptop-32,10.0.8.120,internal-vpn,vpn-client,low,auth_log,benign,avery29 logs in normally during work hours
+GEN0116-E2,GEN0116,2026-10-25 18:43:00,file_access,avery29,laptop-32,10.0.8.120,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0116-E3,GEN0116,2026-10-25 18:55:00,network_upload,avery29,laptop-32,10.0.8.120,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0116-E4,GEN0116,2026-10-25 18:40:00,analyst_note,avery29,laptop-32,10.0.8.120,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0116-E5,GEN0116,2026-10-25 18:20:00,analyst_note,avery29,laptop-32,10.0.8.120,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0117-E1,GEN0117,2026-05-26 13:37:00,login_success,sam66,laptop-70,10.0.8.163,internal-vpn,vpn-client,low,auth_log,benign,sam66 logs in normally during work hours
+GEN0117-E2,GEN0117,2026-05-26 13:03:00,file_access,sam66,laptop-70,10.0.8.163,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0117-E3,GEN0117,2026-05-26 13:32:00,network_upload,sam66,laptop-70,10.0.8.163,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0117-E4,GEN0117,2026-05-26 13:04:00,analyst_note,sam66,laptop-70,10.0.8.163,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0117-E5,GEN0117,2026-05-26 13:19:00,analyst_note,sam66,laptop-70,10.0.8.163,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0118-E1,GEN0118,2026-05-03 10:39:00,login_success,quinn67,laptop-17,10.0.6.214,internal-vpn,vpn-client,low,auth_log,benign,quinn67 logs in normally during work hours
+GEN0118-E2,GEN0118,2026-05-03 10:38:00,file_access,quinn67,laptop-17,10.0.6.214,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0118-E3,GEN0118,2026-05-03 10:29:00,network_upload,quinn67,laptop-17,10.0.6.214,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0118-E4,GEN0118,2026-05-03 10:37:00,analyst_note,quinn67,laptop-17,10.0.6.214,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0118-E5,GEN0118,2026-05-03 10:35:00,analyst_note,quinn67,laptop-17,10.0.6.214,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0119-E1,GEN0119,2026-10-16 17:09:00,login_success,hayden15,vm-83,10.0.4.84,internal-vpn,vpn-client,low,auth_log,benign,hayden15 logs in normally during work hours
+GEN0119-E2,GEN0119,2026-10-16 17:03:00,file_access,hayden15,vm-83,10.0.4.84,client-database,explorer.exe,high,file_audit_log,suspicious,"files are pulled in an unusually large download, well outside normal job duties"
+GEN0119-E3,GEN0119,2026-10-16 17:06:00,network_upload,hayden15,vm-83,10.0.4.84,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0119-E4,GEN0119,2026-10-16 17:51:00,analyst_note,hayden15,vm-83,10.0.4.84,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0119-E5,GEN0119,2026-10-16 17:57:00,analyst_note,hayden15,vm-83,10.0.4.84,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0120-E1,GEN0120,2026-04-23 16:28:00,login_success,rowan53,laptop-74,10.0.3.12,internal-vpn,vpn-client,low,auth_log,benign,rowan53 logs in normally during work hours
+GEN0120-E2,GEN0120,2026-04-23 16:33:00,file_access,rowan53,laptop-74,10.0.3.12,client-database,explorer.exe,high,file_audit_log,suspicious,"an unusually large download of files occurs, outside normal job duties"
+GEN0120-E3,GEN0120,2026-04-23 16:23:00,network_upload,rowan53,laptop-74,10.0.3.12,personal-cloud-storage.example,chrome.exe,high,network_log,suspicious,a large volume of files is uploaded to a personal cloud storage account
+GEN0120-E4,GEN0120,2026-04-23 16:23:00,analyst_note,rowan53,laptop-74,10.0.3.12,n/a,n/a,medium,analyst_notes,context,HR records show this happened just after resignation was submitted
+GEN0120-E5,GEN0120,2026-04-23 16:58:00,analyst_note,rowan53,laptop-74,10.0.3.12,n/a,n/a,low,analyst_notes,context,no ticket was found authorizing this bulk transfer
+GEN0121-E1,GEN0121,2026-10-02 03:41:00,login_success,monitor-svc,vm-62,10.0.6.175,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0121-E2,GEN0121,2026-10-02 03:21:00,process_start,monitor-svc,vm-62,10.0.6.175,vm-62,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0121-E3,GEN0121,2026-10-02 03:04:00,file_access,monitor-svc,vm-62,10.0.6.175,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0121-E4,GEN0121,2026-10-02 03:21:00,analyst_note,monitor-svc,vm-62,10.0.6.175,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0122-E1,GEN0122,2026-11-20 01:21:00,login_success,backup-svc,vm-46,10.0.5.187,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0122-E2,GEN0122,2026-11-20 01:05:00,process_start,backup-svc,vm-46,10.0.5.187,vm-46,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0122-E3,GEN0122,2026-11-20 01:37:00,file_access,backup-svc,vm-46,10.0.5.187,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0122-E4,GEN0122,2026-11-20 01:42:00,analyst_note,backup-svc,vm-46,10.0.5.187,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0123-E1,GEN0123,2026-10-23 01:19:00,login_success,backup-svc,server-49,10.0.7.35,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0123-E2,GEN0123,2026-10-23 01:35:00,process_start,backup-svc,server-49,10.0.7.35,server-49,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0123-E3,GEN0123,2026-10-23 01:24:00,file_access,backup-svc,server-49,10.0.7.35,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0123-E4,GEN0123,2026-10-23 01:41:00,analyst_note,backup-svc,server-49,10.0.7.35,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0124-E1,GEN0124,2026-11-14 03:23:00,login_success,monitor-svc,workstation-95,10.0.2.167,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0124-E2,GEN0124,2026-11-14 03:01:00,process_start,monitor-svc,workstation-95,10.0.2.167,workstation-95,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0124-E3,GEN0124,2026-11-14 03:23:00,file_access,monitor-svc,workstation-95,10.0.2.167,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0124-E4,GEN0124,2026-11-14 03:19:00,analyst_note,monitor-svc,workstation-95,10.0.2.167,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0125-E1,GEN0125,2026-04-05 01:04:00,login_success,backup-svc,workstation-53,10.0.8.51,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0125-E2,GEN0125,2026-04-05 01:18:00,process_start,backup-svc,workstation-53,10.0.8.51,workstation-53,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0125-E3,GEN0125,2026-04-05 01:54:00,file_access,backup-svc,workstation-53,10.0.8.51,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0125-E4,GEN0125,2026-04-05 01:50:00,analyst_note,backup-svc,workstation-53,10.0.8.51,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0126-E1,GEN0126,2026-10-05 03:24:00,login_success,backup-svc,laptop-94,10.0.6.226,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0126-E2,GEN0126,2026-10-05 03:09:00,process_start,backup-svc,laptop-94,10.0.6.226,laptop-94,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0126-E3,GEN0126,2026-10-05 03:10:00,file_access,backup-svc,laptop-94,10.0.6.226,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0126-E4,GEN0126,2026-10-05 03:11:00,analyst_note,backup-svc,laptop-94,10.0.6.226,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0127-E1,GEN0127,2026-06-22 03:15:00,login_success,sync-svc,workstation-66,10.0.1.107,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0127-E2,GEN0127,2026-06-22 03:28:00,process_start,sync-svc,workstation-66,10.0.1.107,workstation-66,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0127-E3,GEN0127,2026-06-22 03:39:00,file_access,sync-svc,workstation-66,10.0.1.107,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0127-E4,GEN0127,2026-06-22 03:18:00,analyst_note,sync-svc,workstation-66,10.0.1.107,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0128-E1,GEN0128,2026-08-27 01:23:00,login_success,sync-svc,vm-39,10.0.4.81,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0128-E2,GEN0128,2026-08-27 01:43:00,process_start,sync-svc,vm-39,10.0.4.81,vm-39,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0128-E3,GEN0128,2026-08-27 01:36:00,file_access,sync-svc,vm-39,10.0.4.81,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0128-E4,GEN0128,2026-08-27 01:28:00,analyst_note,sync-svc,vm-39,10.0.4.81,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0129-E1,GEN0129,2026-03-27 01:51:00,login_success,monitor-svc,server-58,10.0.7.249,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0129-E2,GEN0129,2026-03-27 01:38:00,process_start,monitor-svc,server-58,10.0.7.249,server-58,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0129-E3,GEN0129,2026-03-27 01:08:00,file_access,monitor-svc,server-58,10.0.7.249,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0129-E4,GEN0129,2026-03-27 01:55:00,analyst_note,monitor-svc,server-58,10.0.7.249,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0130-E1,GEN0130,2026-06-18 01:45:00,login_success,monitor-svc,laptop-92,10.0.8.225,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0130-E2,GEN0130,2026-06-18 01:54:00,process_start,monitor-svc,laptop-92,10.0.8.225,laptop-92,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0130-E3,GEN0130,2026-06-18 01:33:00,file_access,monitor-svc,laptop-92,10.0.8.225,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0130-E4,GEN0130,2026-06-18 01:54:00,analyst_note,monitor-svc,laptop-92,10.0.8.225,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0131-E1,GEN0131,2026-08-17 01:53:00,login_success,backup-svc,server-20,10.0.3.71,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0131-E2,GEN0131,2026-08-17 01:27:00,process_start,backup-svc,server-20,10.0.3.71,server-20,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0131-E3,GEN0131,2026-08-17 01:05:00,file_access,backup-svc,server-20,10.0.3.71,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0131-E4,GEN0131,2026-08-17 01:58:00,analyst_note,backup-svc,server-20,10.0.3.71,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0132-E1,GEN0132,2026-01-13 03:23:00,login_success,backup-svc,vm-54,10.0.1.108,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0132-E2,GEN0132,2026-01-13 03:15:00,process_start,backup-svc,vm-54,10.0.1.108,vm-54,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0132-E3,GEN0132,2026-01-13 03:24:00,file_access,backup-svc,vm-54,10.0.1.108,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0132-E4,GEN0132,2026-01-13 03:05:00,analyst_note,backup-svc,vm-54,10.0.1.108,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0133-E1,GEN0133,2026-02-27 03:41:00,login_success,monitor-svc,workstation-13,10.0.6.240,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0133-E2,GEN0133,2026-02-27 03:21:00,process_start,monitor-svc,workstation-13,10.0.6.240,workstation-13,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0133-E3,GEN0133,2026-02-27 03:50:00,file_access,monitor-svc,workstation-13,10.0.6.240,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0133-E4,GEN0133,2026-02-27 03:09:00,analyst_note,monitor-svc,workstation-13,10.0.6.240,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0134-E1,GEN0134,2026-03-25 03:30:00,login_success,backup-svc,laptop-46,10.0.8.180,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0134-E2,GEN0134,2026-03-25 03:28:00,process_start,backup-svc,laptop-46,10.0.8.180,laptop-46,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0134-E3,GEN0134,2026-03-25 03:39:00,file_access,backup-svc,laptop-46,10.0.8.180,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0134-E4,GEN0134,2026-03-25 03:00:00,analyst_note,backup-svc,laptop-46,10.0.8.180,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0135-E1,GEN0135,2026-03-18 03:38:00,login_success,backup-svc,laptop-42,10.0.4.215,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0135-E2,GEN0135,2026-03-18 03:33:00,process_start,backup-svc,laptop-42,10.0.4.215,laptop-42,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0135-E3,GEN0135,2026-03-18 03:27:00,file_access,backup-svc,laptop-42,10.0.4.215,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0135-E4,GEN0135,2026-03-18 03:07:00,analyst_note,backup-svc,laptop-42,10.0.4.215,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0136-E1,GEN0136,2026-04-14 03:50:00,login_success,monitor-svc,workstation-48,10.0.2.14,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0136-E2,GEN0136,2026-04-14 03:39:00,process_start,monitor-svc,workstation-48,10.0.2.14,workstation-48,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0136-E3,GEN0136,2026-04-14 03:29:00,file_access,monitor-svc,workstation-48,10.0.2.14,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0136-E4,GEN0136,2026-04-14 03:04:00,analyst_note,monitor-svc,workstation-48,10.0.2.14,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0137-E1,GEN0137,2026-09-19 01:45:00,login_success,backup-svc,vm-86,10.0.1.163,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0137-E2,GEN0137,2026-09-19 01:09:00,process_start,backup-svc,vm-86,10.0.1.163,vm-86,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0137-E3,GEN0137,2026-09-19 01:18:00,file_access,backup-svc,vm-86,10.0.1.163,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0137-E4,GEN0137,2026-09-19 01:27:00,analyst_note,backup-svc,vm-86,10.0.1.163,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0138-E1,GEN0138,2026-11-22 01:33:00,login_success,backup-svc,server-40,10.0.7.49,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0138-E2,GEN0138,2026-11-22 01:23:00,process_start,backup-svc,server-40,10.0.7.49,server-40,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0138-E3,GEN0138,2026-11-22 01:04:00,file_access,backup-svc,server-40,10.0.7.49,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0138-E4,GEN0138,2026-11-22 01:33:00,analyst_note,backup-svc,server-40,10.0.7.49,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0139-E1,GEN0139,2026-11-13 02:16:00,login_success,sync-svc,laptop-59,10.0.8.13,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0139-E2,GEN0139,2026-11-13 02:47:00,process_start,sync-svc,laptop-59,10.0.8.13,laptop-59,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0139-E3,GEN0139,2026-11-13 02:01:00,file_access,sync-svc,laptop-59,10.0.8.13,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0139-E4,GEN0139,2026-11-13 02:22:00,analyst_note,sync-svc,laptop-59,10.0.8.13,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0140-E1,GEN0140,2026-10-24 02:08:00,login_success,backup-svc,server-40,10.0.2.199,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0140-E2,GEN0140,2026-10-24 02:02:00,process_start,backup-svc,server-40,10.0.2.199,server-40,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0140-E3,GEN0140,2026-10-24 02:22:00,file_access,backup-svc,server-40,10.0.2.199,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0140-E4,GEN0140,2026-10-24 02:34:00,analyst_note,backup-svc,server-40,10.0.2.199,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0141-E1,GEN0141,2026-12-16 03:11:00,login_success,monitor-svc,workstation-97,10.0.8.253,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0141-E2,GEN0141,2026-12-16 03:51:00,process_start,monitor-svc,workstation-97,10.0.8.253,workstation-97,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0141-E3,GEN0141,2026-12-16 03:08:00,file_access,monitor-svc,workstation-97,10.0.8.253,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0141-E4,GEN0141,2026-12-16 03:04:00,analyst_note,monitor-svc,workstation-97,10.0.8.253,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0142-E1,GEN0142,2026-01-26 01:56:00,login_success,sync-svc,vm-14,10.0.5.53,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0142-E2,GEN0142,2026-01-26 01:02:00,process_start,sync-svc,vm-14,10.0.5.53,vm-14,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0142-E3,GEN0142,2026-01-26 01:20:00,file_access,sync-svc,vm-14,10.0.5.53,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0142-E4,GEN0142,2026-01-26 01:19:00,analyst_note,sync-svc,vm-14,10.0.5.53,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0143-E1,GEN0143,2026-01-25 03:12:00,login_success,sync-svc,vm-79,10.0.8.66,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0143-E2,GEN0143,2026-01-25 03:18:00,process_start,sync-svc,vm-79,10.0.8.66,vm-79,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0143-E3,GEN0143,2026-01-25 03:22:00,file_access,sync-svc,vm-79,10.0.8.66,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0143-E4,GEN0143,2026-01-25 03:55:00,analyst_note,sync-svc,vm-79,10.0.8.66,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0144-E1,GEN0144,2026-06-14 02:47:00,login_success,backup-svc,server-44,10.0.2.206,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0144-E2,GEN0144,2026-06-14 02:28:00,process_start,backup-svc,server-44,10.0.2.206,server-44,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0144-E3,GEN0144,2026-06-14 02:57:00,file_access,backup-svc,server-44,10.0.2.206,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0144-E4,GEN0144,2026-06-14 02:24:00,analyst_note,backup-svc,server-44,10.0.2.206,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0145-E1,GEN0145,2026-09-09 01:46:00,login_success,monitor-svc,workstation-73,10.0.8.96,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0145-E2,GEN0145,2026-09-09 01:27:00,process_start,monitor-svc,workstation-73,10.0.8.96,workstation-73,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0145-E3,GEN0145,2026-09-09 01:05:00,file_access,monitor-svc,workstation-73,10.0.8.96,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0145-E4,GEN0145,2026-09-09 01:27:00,analyst_note,monitor-svc,workstation-73,10.0.8.96,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0146-E1,GEN0146,2026-02-03 02:42:00,login_success,sync-svc,workstation-79,10.0.5.84,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0146-E2,GEN0146,2026-02-03 02:18:00,process_start,sync-svc,workstation-79,10.0.5.84,workstation-79,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0146-E3,GEN0146,2026-02-03 02:19:00,file_access,sync-svc,workstation-79,10.0.5.84,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0146-E4,GEN0146,2026-02-03 02:28:00,analyst_note,sync-svc,workstation-79,10.0.5.84,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0147-E1,GEN0147,2026-08-02 03:55:00,login_success,sync-svc,vm-31,10.0.8.91,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0147-E2,GEN0147,2026-08-02 03:58:00,process_start,sync-svc,vm-31,10.0.8.91,vm-31,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0147-E3,GEN0147,2026-08-02 03:22:00,file_access,sync-svc,vm-31,10.0.8.91,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0147-E4,GEN0147,2026-08-02 03:39:00,analyst_note,sync-svc,vm-31,10.0.8.91,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0148-E1,GEN0148,2026-11-21 02:23:00,login_success,monitor-svc,server-91,10.0.1.21,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0148-E2,GEN0148,2026-11-21 02:32:00,process_start,monitor-svc,server-91,10.0.1.21,server-91,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0148-E3,GEN0148,2026-11-21 02:51:00,file_access,monitor-svc,server-91,10.0.1.21,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0148-E4,GEN0148,2026-11-21 02:47:00,analyst_note,monitor-svc,server-91,10.0.1.21,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0149-E1,GEN0149,2026-10-22 02:02:00,login_success,sync-svc,workstation-13,10.0.3.219,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0149-E2,GEN0149,2026-10-22 02:08:00,process_start,sync-svc,workstation-13,10.0.3.219,workstation-13,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0149-E3,GEN0149,2026-10-22 02:04:00,file_access,sync-svc,workstation-13,10.0.3.219,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0149-E4,GEN0149,2026-10-22 02:15:00,analyst_note,sync-svc,workstation-13,10.0.3.219,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0150-E1,GEN0150,2026-10-02 03:09:00,login_success,sync-svc,server-56,10.0.7.245,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0150-E2,GEN0150,2026-10-02 03:43:00,process_start,sync-svc,server-56,10.0.7.245,server-56,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0150-E3,GEN0150,2026-10-02 03:28:00,file_access,sync-svc,server-56,10.0.7.245,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0150-E4,GEN0150,2026-10-02 03:23:00,analyst_note,sync-svc,server-56,10.0.7.245,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0151-E1,GEN0151,2026-06-13 02:41:00,login_success,monitor-svc,vm-19,10.0.3.137,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0151-E2,GEN0151,2026-06-13 02:17:00,process_start,monitor-svc,vm-19,10.0.3.137,vm-19,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0151-E3,GEN0151,2026-06-13 02:15:00,file_access,monitor-svc,vm-19,10.0.3.137,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0151-E4,GEN0151,2026-06-13 02:07:00,analyst_note,monitor-svc,vm-19,10.0.3.137,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0152-E1,GEN0152,2026-09-04 02:49:00,login_success,backup-svc,workstation-73,10.0.7.235,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0152-E2,GEN0152,2026-09-04 02:16:00,process_start,backup-svc,workstation-73,10.0.7.235,workstation-73,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0152-E3,GEN0152,2026-09-04 02:45:00,file_access,backup-svc,workstation-73,10.0.7.235,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0152-E4,GEN0152,2026-09-04 02:28:00,analyst_note,backup-svc,workstation-73,10.0.7.235,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0153-E1,GEN0153,2026-02-05 01:28:00,login_success,backup-svc,server-98,10.0.8.53,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0153-E2,GEN0153,2026-02-05 01:11:00,process_start,backup-svc,server-98,10.0.8.53,server-98,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0153-E3,GEN0153,2026-02-05 01:57:00,file_access,backup-svc,server-98,10.0.8.53,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0153-E4,GEN0153,2026-02-05 01:45:00,analyst_note,backup-svc,server-98,10.0.8.53,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0154-E1,GEN0154,2026-06-23 01:35:00,login_success,monitor-svc,laptop-97,10.0.6.172,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0154-E2,GEN0154,2026-06-23 01:34:00,process_start,monitor-svc,laptop-97,10.0.6.172,laptop-97,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0154-E3,GEN0154,2026-06-23 01:18:00,file_access,monitor-svc,laptop-97,10.0.6.172,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0154-E4,GEN0154,2026-06-23 01:57:00,analyst_note,monitor-svc,laptop-97,10.0.6.172,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0155-E1,GEN0155,2026-06-17 01:07:00,login_success,monitor-svc,workstation-91,10.0.3.205,vpn-gateway,vpn-client,medium,auth_log,benign,the monitor-svc account logs in at an odd early-morning hour
+GEN0155-E2,GEN0155,2026-06-17 01:12:00,process_start,monitor-svc,workstation-91,10.0.3.205,workstation-91,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0155-E3,GEN0155,2026-06-17 01:50:00,file_access,monitor-svc,workstation-91,10.0.3.205,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0155-E4,GEN0155,2026-06-17 01:08:00,analyst_note,monitor-svc,workstation-91,10.0.3.205,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0156-E1,GEN0156,2026-10-12 02:51:00,login_success,backup-svc,vm-13,10.0.6.143,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0156-E2,GEN0156,2026-10-12 02:35:00,process_start,backup-svc,vm-13,10.0.6.143,vm-13,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0156-E3,GEN0156,2026-10-12 02:08:00,file_access,backup-svc,vm-13,10.0.6.143,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0156-E4,GEN0156,2026-10-12 02:39:00,analyst_note,backup-svc,vm-13,10.0.6.143,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0157-E1,GEN0157,2026-12-16 03:26:00,login_success,backup-svc,laptop-49,10.0.7.185,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0157-E2,GEN0157,2026-12-16 03:49:00,process_start,backup-svc,laptop-49,10.0.7.185,laptop-49,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0157-E3,GEN0157,2026-12-16 03:26:00,file_access,backup-svc,laptop-49,10.0.7.185,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0157-E4,GEN0157,2026-12-16 03:52:00,analyst_note,backup-svc,laptop-49,10.0.7.185,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0158-E1,GEN0158,2026-02-15 02:43:00,login_success,sync-svc,laptop-26,10.0.6.166,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0158-E2,GEN0158,2026-02-15 02:33:00,process_start,sync-svc,laptop-26,10.0.6.166,laptop-26,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0158-E3,GEN0158,2026-02-15 02:22:00,file_access,sync-svc,laptop-26,10.0.6.166,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0158-E4,GEN0158,2026-02-15 02:08:00,analyst_note,sync-svc,laptop-26,10.0.6.166,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0159-E1,GEN0159,2026-01-27 01:33:00,login_success,sync-svc,workstation-26,10.0.7.130,vpn-gateway,vpn-client,medium,auth_log,benign,the sync-svc account logs in at an odd early-morning hour
+GEN0159-E2,GEN0159,2026-01-27 01:09:00,process_start,sync-svc,workstation-26,10.0.7.130,workstation-26,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0159-E3,GEN0159,2026-01-27 01:19:00,file_access,sync-svc,workstation-26,10.0.7.130,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0159-E4,GEN0159,2026-01-27 01:10:00,analyst_note,sync-svc,workstation-26,10.0.7.130,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this
+GEN0160-E1,GEN0160,2026-09-10 01:16:00,login_success,backup-svc,server-38,10.0.6.244,vpn-gateway,vpn-client,medium,auth_log,benign,the backup-svc account logs in at an odd early-morning hour
+GEN0160-E2,GEN0160,2026-09-10 01:12:00,process_start,backup-svc,server-38,10.0.6.244,server-38,agent.exe,medium,endpoint_log,benign,a background process starts shortly after login
+GEN0160-E3,GEN0160,2026-09-10 01:40:00,file_access,backup-svc,server-38,10.0.6.244,shared-drive,agent.exe,medium,file_audit_log,benign,files are touched as part of a routine-looking job
+GEN0160-E4,GEN0160,2026-09-10 01:35:00,analyst_note,backup-svc,server-38,10.0.6.244,n/a,n/a,low,analyst_notes,context,no one on the team can immediately confirm the schedule for this

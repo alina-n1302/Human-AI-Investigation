@@ -1,5 +1,5 @@
 # Generated datasets - regenerate with make_dataset.py / case_generator.py
-data/*.csv
+
 
 # Generated evaluation output
 results/*.jsonl
